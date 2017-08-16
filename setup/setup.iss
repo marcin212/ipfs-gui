@@ -1,6 +1,6 @@
 [Files]
-Source: "ipfs\ipfs-386.exe"; DestDir: "{app}\bin"; DestName: "ipfs.exe"; Flags: 32bit
-Source: "ipfs\ipfs-amd64.exe"; DestDir: "{app}\bin"; DestName: "ipfs.exe"; Flags: 64bit
+Source: "ipfs-386\go-ipfs\ipfs.exe"; DestDir: "{app}\bin"; DestName: "ipfs.exe"; Flags: 32bit
+Source: "ipfs-amd64\go-ipfs\ipfs.exe"; DestDir: "{app}\bin"; DestName: "ipfs.exe"; Flags: 64bit
 Source: "..\bin\Release\ipfs-gui.exe"; DestDir: "{app}\bin"; DestName: "ipfs-gui.exe"
 Source: "ipfs.ico"; DestDir: "{app}"; DestName: "ipfs.ico"
 

@@ -262,3 +262,5 @@ __pycache__/
 
 #Innno setup
 *.exe
+/setup/ipfs-386*
+/setup/ipfs-amd64*
