@@ -13,7 +13,7 @@ IPFS-GUI
 ## Install
 
 * Build the things
-  * Or get them at https://ipfs.io/ipfs/QmYw7pbLogpgxtLd3FWFibqhiCkzGSVKESVwWTNJNN9h8G (v0.0.1) 
+  * Or get them at https://ipfs.io/ipfs/QmT7fjfKFhPMyXWFAugwEvoHxPtBdpScvhyuS9zFf6Wssp (v0.0.1) 
 * Run the installer, you know what to do next!
 
 ## Build
