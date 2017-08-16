@@ -64,7 +64,7 @@ namespace IpfsGui
 
         public void AddFile(string file)
         {
-            string result = IpfsCommand.Add.ExecuteAndWait("-q -r " + file);
+            string result = IpfsCommand.Add.ExecuteAndWait("-q -w -r " + file);
             string hash = result.TrimEnd('\n').Split('\n').Last();
             Clipboard.SetText(hash);
             Utils.ShowBalloonTip(Messages.FILE_ADDED, hash);
