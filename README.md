@@ -14,7 +14,7 @@ IPFS-GUI
 ## Features
 * Manage daemon (start/stop/autostart)
 * Add ipfs to path
-* Add file to ipfs via the 'sent to' menu
+* Add file to ipfs via the 'send to' menu
 * Open webui
 * More to come! If you have an idea leave an issue
 
