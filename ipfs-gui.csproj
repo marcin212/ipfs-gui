@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8B3CD9B6-2324-4361-867C-55589F86F6D6}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>ipfs_gui</RootNamespace>
     <AssemblyName>ipfs-gui</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
@@ -31,37 +31,56 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="source\resources\user.settings">
+    <None Include="resources\UserConfig.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>user.Designer.cs</LastGenOutput>
+      <LastGenOutput>UserConfig.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="source\resources\Icons.Designer.cs">
+    <Compile Include="IpfsGui\IpfsCommand.cs" />
+    <Compile Include="IpfsGui\IpfsDaemon.cs" />
+    <Compile Include="IpfsGui\IpfsGui.cs" />
+    <Compile Include="IpfsGui\SystemTray.cs" />
+    <Compile Include="IpfsGui\Utils.cs" />
+    <Compile Include="resources\Icons.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Icons.resx</DependentUpon>
     </Compile>
-    <Compile Include="source\resources\user.Designer.cs">
+    <Compile Include="resources\Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="resources\UserConfig.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>user.settings</DependentUpon>
+      <DependentUpon>UserConfig.settings</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="source\resources\Icons.resx">
+    <EmbeddedResource Include="resources\Icons.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Icons.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="resources\Messages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="source\resources\ipfs.ico" />
+    <None Include="resources\ipfs.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
