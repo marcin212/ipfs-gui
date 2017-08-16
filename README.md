@@ -6,9 +6,17 @@ IPFS-GUI
 
 ## Table of Contents
 
+- [Featurs](#features)
 - [Install](#install)
 - [Build](#build)
 - [License](#license)
+
+## Features
+* Manage daemon (start/stop/autostart)
+* Add ipfs to path
+* Add file to ipfs via the 'sent to' menu
+* Open webui
+* More to come! If you have an idea leave an issue
 
 ## Install
 
