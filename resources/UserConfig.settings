@@ -1,9 +1,9 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ipfs_gui.source.resources" GeneratedClassName="UserConfig">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ipfs_gui.resources" GeneratedClassName="UserConfig">
   <Profiles />
   <Settings>
     <Setting Name="Autostart" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="IpfsPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">.\ipfs.exe</Value>

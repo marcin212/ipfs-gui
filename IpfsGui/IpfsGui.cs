@@ -19,7 +19,8 @@ namespace IpfsGui
 
         private static IpfsGuiApplication _myApplicationInstance;
 
-        public static IpfsGuiApplication MyApplicationInstance => _myApplicationInstance ?? (_myApplicationInstance = new IpfsGuiApplication());
+        public static IpfsGuiApplication MyApplicationInstance => _myApplicationInstance ??
+                                                                  (_myApplicationInstance = new IpfsGuiApplication());
 
         public IpfsGuiApplication()
         {
@@ -40,9 +41,12 @@ namespace IpfsGui
         [STAThread]
         public static void Main(string[] args)
         {
-            if (args.Length == 1 && (File.Exists(args[0]) || Directory.Exists(args[0])))
+            if (args.Length == 1)
             {
-                IpfsAddFileApplication.Instance.AddFile(args[0]);
+                if (File.Exists(args[0]) || Directory.Exists(args[0]))
+                {
+                    IpfsAddFileApplication.Instance.AddFile(args[0]);
+                }
             }
             else
             {
@@ -61,7 +65,7 @@ namespace IpfsGui
         public void AddFile(string file)
         {
             string result = IpfsCommand.Add.ExecuteAndWait("-q -r " + file);
-            string hash = result.Split('\n').Last();
+            string hash = result.TrimEnd('\n').Split('\n').Last();
             Clipboard.SetText(hash);
             Utils.ShowBalloonTip(Messages.FILE_ADDED, hash);
         }
