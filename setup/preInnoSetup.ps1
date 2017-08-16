@@ -1,6 +1,6 @@
 Set-Variable -Name "IPFS_VERSION" -Value "v0.4.10"
-#WGET "https://ipfs.io/ipns/dist.ipfs.io/go-ipfs/$($IPFS_VERSION)/go-ipfs_$($IPFS_VERSION)_windows-amd64.zip" -OutFile ipfs-amd64.zip 
-#WGET "https://ipfs.io/ipns/dist.ipfs.io/go-ipfs/$($IPFS_VERSION)/go-ipfs_$($IPFS_VERSION)_windows-386.zip" -OutFile ipfs-386.zip 
+WGET "https://ipfs.io/ipns/dist.ipfs.io/go-ipfs/$($IPFS_VERSION)/go-ipfs_$($IPFS_VERSION)_windows-amd64.zip" -OutFile ipfs-amd64.zip 
+WGET "https://ipfs.io/ipns/dist.ipfs.io/go-ipfs/$($IPFS_VERSION)/go-ipfs_$($IPFS_VERSION)_windows-386.zip" -OutFile ipfs-386.zip 
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 function Unzip
 {
