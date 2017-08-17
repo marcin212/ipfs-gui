@@ -9,6 +9,7 @@ IPFS-GUI
 - [Featurs](#features)
 - [Install](#install)
 - [Build](#build)
+- [Screenshots](#screenshots)
 - [License](#license)
 
 ## Features
@@ -32,6 +33,10 @@ IPFS-GUI
 ### Installer
 * First run `setup\preInnoSetup.ps1` to download ipfs build from `dist.ipfs.io`
 * Build the rest using http://www.jrsoftware.org/isinfo.php
+
+## Screenshots
+
+
 ## License
 
 MIT © Marcin 212
