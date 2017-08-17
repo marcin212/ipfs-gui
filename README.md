@@ -35,7 +35,10 @@ IPFS-GUI
 * Build the rest using http://www.jrsoftware.org/isinfo.php
 
 ## Screenshots
-
+![](https://github.com/marcin212/ipfs-gui/blob/master/doc/img/1.png)
+![](https://github.com/marcin212/ipfs-gui/blob/master/doc/img/2.png)
+![](https://github.com/marcin212/ipfs-gui/blob/master/doc/img/3.png)
+![](https://github.com/marcin212/ipfs-gui/blob/master/doc/img/4.gif)
 
 ## License
 
