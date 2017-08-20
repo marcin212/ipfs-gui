@@ -7,7 +7,7 @@ IPFS-GUI
 
 ## Table of Contents
 
-- [Featurs](#features)
+- [Features](#features)
 - [Install](#install)
 - [Build](#build)
 - [License](#license)
@@ -36,4 +36,4 @@ IPFS-GUI
 
 ## License
 
-MIT © Marcin 212
+MIT © marcin 212
