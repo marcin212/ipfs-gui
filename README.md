@@ -36,4 +36,4 @@ IPFS-GUI
 
 ## License
 
-MIT © marcin 212
+MIT © marcin212
