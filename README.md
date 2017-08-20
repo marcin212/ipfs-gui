@@ -3,13 +3,13 @@ IPFS-GUI
 
 > Simple Windows UI providing IPFS integration
 
+![](https://github.com/marcin212/ipfs-gui/blob/master/doc/img/gui.gif)
 
 ## Table of Contents
 
 - [Featurs](#features)
 - [Install](#install)
 - [Build](#build)
-- [Screenshots](#screenshots)
 - [License](#license)
 
 ## Features
@@ -33,12 +33,6 @@ IPFS-GUI
 ### Installer
 * First run `setup\preInnoSetup.ps1` to download ipfs build from `dist.ipfs.io`
 * Build the rest using http://www.jrsoftware.org/isinfo.php
-
-## Screenshots
-![](https://github.com/marcin212/ipfs-gui/blob/master/doc/img/1.png)
-![](https://github.com/marcin212/ipfs-gui/blob/master/doc/img/2.png)
-![](https://github.com/marcin212/ipfs-gui/blob/master/doc/img/3.png)
-![](https://github.com/marcin212/ipfs-gui/blob/master/doc/img/4.gif)
 
 ## License
 
